@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anu_person_details.MainActivity">
+       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="184dp"
+        android:layout_height="21dp"
+        android:text="Welcome To Group InfoEnroll App"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="169dp"
+        android:layout_height="45dp"
+        android:text="Group Id"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="74dp"
+        android:layout_marginBottom="36dp"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+         />
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|numberSigned"
+        tools:layout_editor_absoluteY="320dp"
+        tools:layout_editor_absoluteX="120dp"
+        android:layout_alignRight="@+id/button1"
+        android:layout_alignEnd="@+id/button1"
+        android:layout_alignBottom="@+id/textView2" />
+     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="169dp"
+        android:layout_height="45dp"
+        android:text="Group Name"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="76dp"
+        android:layout_marginBottom="36dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+         />
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteY="330dp"
+        tools:layout_editor_absoluteX="130dp"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignBottom="@+id/textView3" />
+     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="169dp"
+        android:layout_height="45dp"
+        android:text="Number of persons"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="78dp"
+        android:layout_marginBottom="38dp"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+         />
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|numberSigned"
+        tools:layout_editor_absoluteY="350dp"
+        tools:layout_editor_absoluteX="150dp"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignBottom="@+id/textView4"   android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+         />
+       <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="Submit"
+        android:layout_marginLeft="74dp"
+        android:layout_marginStart="74dp" />
+        android:layout_toEndof="@+id/button6"/>
+   </RelativeLayout>
+        
+       
+       
+        
+        
