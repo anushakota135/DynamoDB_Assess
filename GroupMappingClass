@@ -1,0 +1,50 @@
+Package com.anusha.dynamodb.user; 
+import com.amazonaws.auth.CognitoCachingCredentialsProvider;  
+import com.amazonaws.regions.Regions; 
+import com.amazonaws.services.dynamodbv2.*;  
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.*;  
+import com.amazonaws.services.dynamodbv2.model.*;  
+
+ @DynamoDBTable(tableName = "Groups") 
+public class Group { 
+private int groupId; 
+private String groupName; 
+private int number; 
+
+@DynamoDBIndexRangeKey(attributeName = "GroupId") 
+public String getGroupId() { 
+return goupId; 
+} 
+ public void setGroupId(String groupid) { 
+this.groupId = groupId; 
+} 
+ 
+@DynamoDBIndexHashKey(attributeName = "GroupName") 
+public String getGroupName() { 
+return GroupName; 
+} 
+ 
+public void setGroupName(String groupName) { 
+this.groupName = groupName; 
+} 
+ 
+@DynamoDBAttribute(attributeName = "Number") 
+public int getNumber() { 
+return number; 
+} 
+ 
+public void setNumber(int number) { 
+this.number = number; 
+} 
+Group group1=new Group();
+group1.setGroupId();
+group1.setGroupName();
+group1.setNumber();
+Group group2=new Group();
+group2.setGroupId();
+group2.setGroupName();
+group2.setNumber();
+mapper.batchSave(Arrays.asList(group1,group2);
+} 
+
+ 
