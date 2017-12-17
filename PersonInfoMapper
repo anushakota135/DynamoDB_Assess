@@ -1,0 +1,81 @@
+import com.amazonaws.auth.CognitoCachingCredentialsProvider;
+import com.amazonaws.regions.Regions;
+import com.amazonaws.services.dynamodbv2.*;
+import com.amazonaws.mobileconnectors.dynamodbv2.dynamodbmapper.*;
+import com.amazonaws.services.dynamodbv2.model.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Date;
+@DynamoDBTable(tableName = "Persons")
+public class Person {
+    private int personId;
+    private String name;
+    private int age;
+    private String gender;
+   
+   @DynamoDBIndexRangeKey(attributeName = "PersonId")
+    public String getPersonId() {
+        return personId;
+    }
+
+    public void setPersonId(int personID) {
+        this.personId = personId;
+    }
+
+    @DynamoDBIndexHashKey(attributeName = "Name")
+    public String getName) {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @DynamoDBAttribute(attributeName = "Gender")
+    public int getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender ) {
+        this.gender = gender;
+    }
+public class GroupMem {
+    private int groupId;
+    private String groupName;
+    private Date startDate;
+ 
+ @DynamoDBIndexRangeKey(attributeName = "GroupId")
+    public String getGroupId() {
+        return groupId;
+    }
+
+    public void setGroupId(int groupId) {
+        this.groupId = groupID;
+    }
+
+    @DynamoDBIndexHashKey(attributeName = "GroupName")
+    public String getGroupName() {
+        return groupName;
+    }
+
+    public void setStartDate(Date startDate ) {
+        this.startDate = startDate;
+    }
+Person person=new Person();
+person.setPersonId(1234);
+person.setName("MyName");
+person.setAge(34);
+person.setGender("Female");
+GroupMem group1=new Groupmem();
+group1.setGroupId(45645);
+group1.setgroupName("Developing");
+group1.setStartDate("December 25,1978);
+GroupMem group2=new Groupmem();
+group1.setGroupId(322);
+group1.setgroupName("Designing");
+group1.setStartDate("December 25,1978);
+mapper.batchSave(Arrays.asList(person,group1,group2 ));
+}
+}
