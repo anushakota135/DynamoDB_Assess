@@ -1,0 +1,125 @@
+package com.example.anu_person.form;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class FrmActivity extends Activity {
+
+	Button mButton5,mButton4,mButton3,mButton2,mButton1;
+	EditText mEdit5,mEdit4,mEdit3,mEdit2,mEdit1;
+	TextView mText5,mText4,mText3,mText2,mText1;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_frm);
+        mButton1 = (Button)findViewById(R.id.button1);
+
+        mButton1.setOnClickListener(new View.OnClickListener() {
+        	public void onClick(View view) {
+        		mEdit1   = (EditText)findViewById(R.id.editText1);
+        		mText1 = (TextView)findViewById(R.id.textView1);
+        		mText1.setText("Welcome "+mEdit.getText1().toString()+"!");
+        	}
+        });
+        mButton2 = (Button)findViewById(R.id.button2);
+
+        mButton2.setOnClickListener(new View.OnClickListener() {
+        	public void onClick(View view) {
+        		mEdit2   = (EditText)findViewById(R.id.editText2);
+        		mText2 = (TextView)findViewById(R.id.textView2);
+        		mText2.setText("Welcome "+mEdit.getText().toString()+"!");
+        	}
+        });
+        mButton3 = (Button)findViewById(R.id.button3);
+
+        mButton3.setOnClickListener(new View.OnClickListener() {
+        	public void onClick(View view) {
+        		mEdit3   = (EditText)findViewById(R.id.editText3);
+        		mText3 = (TextView)findViewById(R.id.textView3);
+        		mText3.setText("Welcome "+mEdit.getText().toString()+"!");
+        	}
+        });
+        mButton4 = (Button)findViewById(R.id.button4);
+
+        mButton4.setOnClickListener(new View.OnClickListener() {
+        	public void onClick(View view) {
+        		mEdit4   = (EditText)findViewById(R.id.editText4);
+        		mText4 = (TextView)findViewById(R.id.textView4);
+        		mText4.setText("Welcome "+mEdit.getText().toString()+"!");
+        	}
+        });
+        package com.example.anu_group.form;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class FrmActivity extends Activity {
+
+	Button mButton4,mButton3,mButton2,mButton1;
+	EditText mEdit4,mEdit3,mEdit2,mEdit1;
+	TextView mText4,mText3,mText2,mText1;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_frm);
+        mButton1 = (Button)findViewById(R.id.button1);
+
+        mButton1.setOnClickListener(new View.OnClickListener() {
+        	public void onClick(View view) {
+        		mEdit1   = (EditText)findViewById(R.id.editText1);
+        		mText1 = (TextView)findViewById(R.id.textView1);
+        		mText1.setText("Welcome "+mEdit.getText1().toString()+"!");
+        	}
+        });
+        mButton2 = (Button)findViewById(R.id.button2);
+
+        mButton2.setOnClickListener(new View.OnClickListener() {
+        	public void onClick(View view) {
+        		mEdit2   = (EditText)findViewById(R.id.editText2);
+        		mText2 = (TextView)findViewById(R.id.textView2);
+        		mText2.setText("Welcome "+mEdit.getText().toString()+"!");
+        	}
+        });
+        mButton3 = (Button)findViewById(R.id.button3);
+
+        mButton3.setOnClickListener(new View.OnClickListener() {
+        	public void onClick(View view) {
+        		mEdit3   = (EditText)findViewById(R.id.editText3);
+        		mText3 = (TextView)findViewById(R.id.textView3);
+        		mText3.setText("Welcome "+mEdit.getText().toString()+"!");
+        	}
+        });
+        mButton4 = (Button)findViewById(R.id.button4);
+
+        mButton4.setOnClickListener(new View.OnClickListener() {
+        	public void onClick(View view) {
+        		mEdit4   = (EditText)findViewById(R.id.editText4);
+        		mText4 = (TextView)findViewById(R.id.textView4);
+        		mText4.setText("Welcome "+mEdit.getText().toString()+"!");
+        	}
+        });
+        mButton5 = (Button)findViewById(R.id.button5);
+
+        mButton5.setOnClickListener(new View.OnClickListener() {
+        	public void onClick(View view) {
+        		mEdit5   = (EditText)findViewById(R.id.editText5);
+        		mText5 = (TextView)findViewById(R.id.textView5);
+        		mText5.setText("Welcome "+mEdit.getText().toString()+"!");
+        	}
+        });
+        
+    }
+}
+
+    
+
